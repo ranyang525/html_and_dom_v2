@@ -1,3 +1,12 @@
+var Question = require('./question');
+
+module.exports = require('./fillin');
+module.exports = require('./single');
+module.exports = require('./multiple');
+module.exports = require('./estimate');
+module.exports = require('./shortanswer');
+
+
 function clickbox() {
 
   HasEmptyRequiredInput();

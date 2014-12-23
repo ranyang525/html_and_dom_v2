@@ -1,3 +1,5 @@
+var Question = require('./question');
+
 function FillIn(answer,identifier) {
   Question.call(this, answer,identifier);
 }
@@ -22,3 +24,5 @@ FillIn.prototype.getScore = function() {
 
   return score;
 };
+
+module.exports = FillIn;

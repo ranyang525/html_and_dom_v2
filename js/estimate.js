@@ -1,3 +1,5 @@
+var Question = require('./question');
+
 function Estimate(answer,identifier) {
   Question.call(this, answer,identifier);
 }
@@ -16,3 +18,6 @@ Estimate.prototype.getScore = function() {
 
   return this.answer === value ? 10:0;
 };
+
+
+module.exports = Estimate;

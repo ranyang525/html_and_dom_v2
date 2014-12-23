@@ -1,3 +1,5 @@
+var Question = require('./question');
+
 function Single(answer,identifier) {
   Question.call(this, answer,identifier);
 }
@@ -10,7 +12,7 @@ Single.prototype.getScore = function() {
 
   var score = 0;
   var singles = document.getElementsByName(this.identifier);
-  
+
   var single = _.find(singles,{checked : true});
 
   var value = single ? single.value : '';
@@ -18,3 +20,5 @@ Single.prototype.getScore = function() {
   return this.answer === value ? 10 : 0;
 
 };
+
+module.exports = Single;

@@ -1,3 +1,5 @@
+var Question = require('./question');
+
 function Multiple(answer,identifier) {
   Question.call(this, answer,identifier);
 }
@@ -20,3 +22,6 @@ Multiple.prototype.getScore = function() {
   }
   return score;
 };
+
+
+module.exports = Multiple;
