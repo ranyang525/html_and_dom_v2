@@ -1,10 +1,17 @@
 var Question = require('./question');
 
-module.exports = require('./fillin');
-module.exports = require('./single');
-module.exports = require('./multiple');
-module.exports = require('./estimate');
-module.exports = require('./shortanswer');
+var FillIn = require('./fillin');
+var Single = require('./single');
+var Multiple = require('./multiple');
+var Estimate = require('./estimate');
+var ShortAnswer = require('./shortanswer');
+
+
+$(document).ready(function() {
+  $('#submit').on('click',function() {
+    clickbox();
+  });
+});
 
 
 function clickbox() {
