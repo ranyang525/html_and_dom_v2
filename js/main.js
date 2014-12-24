@@ -1,4 +1,3 @@
-var Question = require('./question');
 
 var FillIn = require('./fillin');
 var Single = require('./single');
